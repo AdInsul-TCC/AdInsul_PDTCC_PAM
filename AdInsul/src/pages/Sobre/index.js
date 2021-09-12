@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, KeyboardAvoidingView, TextInput, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import images from '../../images/logoAdInsul125.png'
-export default function Login({ navigation }){
+export default function Sobre({ navigation }){
     return(
 
         <KeyboardAvoidingView style={styles.background}>
@@ -11,20 +11,18 @@ export default function Login({ navigation }){
         <img src={images} alt='' />
         </div>
 
-                <Text style={styles.textoAdInsul}>AdInsul</Text>
-                <Text style={styles.textoLogar}>Logar</Text>
+                <Text style={styles.textoAdInsul}>A diabetes é a quarta comorbidade que mais mata no mundo e que cada 10 segundos mais uma contrai a doença, segundo o Dr. Rodrigo Lamounier. 
+                O Brasil atualmente ocupa o 4º lugar como o país com maior número de pessoas diabéticas no mundo, o Ministério da Saúde no ano de 2013 apresentou 
+                dados onde nos últimos 6 anos houve um aumento de 40% da população que possuem diabetes.
+O projeto se estrutura a partir de uma placa Arduino uno r3 que será programada com as linguagens C++ (linguagem padrão do Arduino) e JavaScript, que dá suporte ao componente 
+                bluetooth module hc-05 que será necessária para a comunicação entre software-usuário tendo em vista que as configurações de dosagem e hora de aplicação serão feitas pelo próprio a partir de seu celular, 
+                o app será feito utilizando principalmente do React Native. Vale lembrar que as unidades de insulina são determinadas pelo médico.</Text>
+        
             </View>
             <View>
-                <TextInput style={styles.campo}
-                placeholder = "código de acesso"
-                autoCorrect={false}
-                onChangeText={()=> {}}
-                />
-                <TouchableOpacity style={styles.botao} onPress={()=>navigation.navigate('Aplicar')}>
-                    <Text style={styles.textoBotao}>ENTRAR</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.botao} onPress={()=>navigation.navigate('Sobre')}>
-                    <Text style={styles.textoBotao}>?</Text>
+                
+                <TouchableOpacity style={styles.botao} onPress={()=>navigation.navigate('Login')}>
+                    <Text style={styles.textoBotao}>VOLTAR</Text>
                 </TouchableOpacity>
 
             </View>
@@ -46,7 +44,7 @@ const styles = StyleSheet.create({
     },
     textoAdInsul: {
         color: '#fff',
-        fontSize: 50,
+        fontSize: 25,
         fontFamily: 'Arial'
     },
     textoLogar: {
