@@ -18,11 +18,11 @@ export default function Aplicar({ navigation }){
             />
 
             <TouchableOpacity style={styles.botao}>
-                    <Text style={styles.textoBotao}>AGENDAR APLICAÇÃO</Text>
+                    <Text style={styles.textoBotao} onPress={()=>navigation.navigate('Agendamentos')}>AGENDAR APLICAÇÃO</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.botaoDois}>
-                    <Text style={styles.textoBotao}>APLICAR</Text>
+                    <Text style={styles.textoBotao}>ENVIAR</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.botaoDois} onPress={()=>navigation.navigate('Login')}>
