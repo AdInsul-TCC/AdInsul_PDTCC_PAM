@@ -18,7 +18,7 @@ export default function Aplicar({ navigation }){
             />
 
             <TouchableOpacity style={styles.botao}>
-                    <Text style={styles.textoBotao} onPress={()=>navigation.navigate('Agendamentos')}>AGENDAR APLICAÇÃO</Text>
+                    <Text style={styles.textoBotao} onPress={()=>navigation.navigate('Agendar')}>AGENDAR APLICAÇÃO</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.botaoDois}>

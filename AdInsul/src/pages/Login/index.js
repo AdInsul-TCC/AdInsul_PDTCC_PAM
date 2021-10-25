@@ -23,7 +23,7 @@ export default function Login({ navigation }){
                 <TouchableOpacity style={styles.botao} onPress={()=>navigation.navigate('Aplicar')}>
                     <Text style={styles.textoBotao}>ENTRAR</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.botao} onPress={()=>navigation.navigate('Sobre')}>
+                <TouchableOpacity style={styles.botaoSobre} onPress={()=>navigation.navigate('Sobre')}>
                     <Text style={styles.textoBotao}>?</Text>
                 </TouchableOpacity>
 
@@ -72,5 +72,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 15,
         height: 35
+    },
+    botaoSobre: {
+        marginTop: 50,
+        marginBottom: 20,
+        backgroundColor: '#272727',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 30,
+        height: 30,
+        width: 30
     }
 });
